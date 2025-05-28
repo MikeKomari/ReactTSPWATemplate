@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
 import { VitePWA } from "vite-plugin-pwa";
+import tailwindcss from '@tailwindcss/vite'
 // const manifestForPlugIn = {
 //   registerType: 'prompt' as const,
 //   includeAssets: ['favicon.ico', "apple-touc-icon.png", "masked-icon.svg"],
@@ -43,7 +44,7 @@ import { VitePWA } from "vite-plugin-pwa";
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), VitePWA({
+  plugins: [tailwindcss(), react(), VitePWA({
       registerType: "autoUpdate",
       includeAssets: ["manifest.json"],
       workbox: {
