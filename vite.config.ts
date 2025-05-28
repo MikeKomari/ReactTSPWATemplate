@@ -67,20 +67,40 @@ export default defineConfig({
         name: "React-vite-app-pwa",
         short_name: "React-vite-app-pwa",
         description: "I am a simple vite app",
-        theme_color: "#ffffff",
+        start_url: "/",
+        display: "standalone",
         background_color: "#ffffff",
+        theme_color: "#000000",
+        orientation: "portrait-primary",
         icons: [
           {
-            src: "../../public/PWA/icons-1.png",
-            sizes: "192x192",
-            type: "image/png",
+            "src": "/PWA/icons-1.png",
+            "type": "image/png",
+            "sizes": "192x192",
+            "purpose": "any"
           },
           {
-            src: "../../public/PWA/icons-2.png",
-            sizes: "512x512",
-            type: "image/png",
+            "src": "/PWA/icons-1.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "any"
           },
+
         ],
+        screenshots: [
+          {
+            "src": "/PWA/bg-2.png",
+            "sizes": "1280x720",
+            "type": "image/png",
+            "form_factor": "wide"
+          },
+          {
+            "src": "/PWA/bg-1.png",
+            "sizes": "375x667",
+            "type": "image/png"
+          }
+        ],
+        lang: "en"
       },
     })],
 })
