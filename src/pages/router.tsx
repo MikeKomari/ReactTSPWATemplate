@@ -11,11 +11,11 @@ import RoleLayout from "@/layout/RoleLayout";
 
 export const router = createBrowserRouter([
   {
-    path: "/app",
+    path: "/",
     element: <Main />,
   },
   {
-    path: "/",
+    path: "/app",
     element: <AppLayout />,
     errorElement: <ErrorPage />,
     children: [
