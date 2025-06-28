@@ -1,0 +1,1 @@
+const THEME = "DARK";
